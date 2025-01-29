@@ -560,4 +560,10 @@ img {
     display: flex;
     flex-direction: column;
   }
+  .services__service {
+    font-size: 3rem;
+  }
+  .hero__contentBox {
+    max-width: 100%;
+  }
 }
