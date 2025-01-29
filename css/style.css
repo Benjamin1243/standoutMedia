@@ -428,7 +428,7 @@ img {
     max-height: 90vh;
     flex-direction: column;
     gap: 1.1875rem;
-    height: 80vh;
+    height: 90vh;
     transition: 0.5s;
   }
   .navigation__link {
@@ -457,7 +457,7 @@ img {
     cursor: pointer;
   }
   .navigation--foldout {
-    background-color: rgb(237, 237, 237);
+    background-color: #f8dd9f;
     position: fixed;
     transform: translateX(0%);
   }
