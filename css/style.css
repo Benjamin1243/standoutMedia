@@ -421,16 +421,17 @@ img {
     padding-top: 1.875rem;
     width: 100%;
     z-index: 100;
-    transition: 0.7s;
+    background-color: transparent;
+    transition: 0.4s;
     position: fixed;
     height: 100vh;
-    transform: translateX(-150%);
+    transform: translateX(-100%);
   }
   .navigation__list {
     max-height: 90vh;
     flex-direction: column;
     gap: 1.1875rem;
-    height: 100vh;
+    height: 70vh;
     transition: 0.5s;
   }
   .navigation__link {
@@ -459,7 +460,7 @@ img {
   .navigation--foldout {
     background-color: rgb(237, 237, 237);
     position: fixed;
-    transform: translateX(1%);
+    transform: translateX(0%);
   }
   .navigation--foldout .navigation__buttonLink {
     display: block;
