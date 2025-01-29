@@ -1,3 +1,5 @@
+
+
 //først tager jeg fat i form, jeg senere kan give den en eventlistener
 const form  = document.querySelector("form")
 //nu adder jeg en eventlistener
