@@ -427,22 +427,23 @@ img {
     transform: translateX(-150%);
   }
   .navigation__list {
+    max-height: 90vh;
     flex-direction: column;
-    gap: 2.1875rem;
+    gap: 1.1875rem;
     height: 100vh;
     transition: 0.5s;
   }
   .navigation__link {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .navigation__logo {
-    width: 10.25rem;
+    width: 9.25rem;
   }
   .navigation__list {
     padding: 0;
   }
   .navigation__buttonLink {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .burgerMenuButton {
     display: block;
@@ -539,8 +540,23 @@ img {
     display: block;
     margin: 2rem auto 0 auto;
   }
+  .getInTouch__heading {
+    font-size: 2.5rem;
+  }
+  .getInTouch__getInTouch__text--bold {
+    font-size: 1.5rem;
+  }
+  .getInTouch__form {
+    width: 80%;
+  }
   .footer__flexContent {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 550px) {
+  .services {
+    display: flex;
+    flex-direction: column;
   }
 }
