@@ -16,11 +16,10 @@ img {
   padding-top: 0.3125rem;
   padding-bottom: 0.625rem;
   display: flex;
+  gap: 1rem;
+  padding: 1rem 3rem;
   justify-content: space-around;
   align-items: center;
-}
-.navigation__burgerMenuButton {
-  display: none;
 }
 .navigation__listItem {
   list-style: none;
@@ -29,23 +28,41 @@ img {
 .navigation__link {
   font-family: "Poppins", serif;
   color: black;
+  transition: 0.5s;
   font-size: 1.125rem;
   text-decoration: none;
+}
+.navigation__link:hover {
+  color: #f8dd9f;
+  transform: scale(1.1);
 }
 .navigation__logo {
   align-self: end;
   width: 6.25rem;
 }
 .navigation__buttonLink {
+  margin-left: 3rem;
+  transition: 0.5s;
   text-decoration: none;
   text-transform: uppercase;
   font-family: "Poppins", serif;
   color: rgb(255, 255, 255);
   font-size: 1rem;
   text-decoration: none;
+  border: 2px solid transparent;
   background-color: black;
   padding: 0.4rem 1rem;
+  padding-left: 2rem;
   border-radius: 0.3125rem;
+}
+.navigation__buttonLink:hover {
+  color: black;
+  background-color: transparent;
+  border: 2px solid black;
+}
+
+.burgerMenuButton {
+  display: none;
 }
 
 .hero {
@@ -81,6 +98,8 @@ img {
   grid-row: 1;
 }
 .hero__linkButton {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.565);
+  transition: 0.5s;
   margin-top: 3.75rem;
   text-decoration: none;
   font-family: "Poppins", serif;
@@ -92,6 +111,12 @@ img {
   width: 12.5rem;
   height: 2.7rem;
   background-color: white;
+}
+.hero__linkButton:hover {
+  background-color: #f8dd9f;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.565);
+  color: black;
+  transform: scale(1.1);
 }
 
 .pursuit {
@@ -115,6 +140,7 @@ img {
   font-family: "Poppins", serif;
 }
 .pursuit__linkButton {
+  transition: 0.5s;
   text-decoration: none;
   font-family: "Poppins", serif;
   color: rgb(255, 255, 255);
@@ -125,6 +151,13 @@ img {
   padding: 0.625rem 1.25rem;
   margin: 1.25rem auto;
   background-color: rgb(0, 0, 0);
+  border: 1px solid black;
+}
+.pursuit__linkButton:hover {
+  background-color: #f8dd9f;
+  border: 1px solid black;
+  color: black;
+  transform: scale(1.1);
 }
 
 .modern {
@@ -200,8 +233,12 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+.services:hover .services__service:not(:hover) {
+  filter: grayscale(80%);
+}
 .services__service {
   grid-column: span 1;
+  transition: all 0.3s;
   z-index: 2;
   place-self: center;
   font-size: 3.75rem;
@@ -216,6 +253,7 @@ img {
   height: 50vw;
   min-height: 20rem;
   text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.322);
 }
 .services__service:nth-child(1) {
   background-image: url("../images/servicesgallery/ydelser.jpg");
@@ -322,6 +360,13 @@ img {
   border: 2px solid rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   transform: scale(1.03);
+}
+.getInTouch__failMeesage {
+  display: none;
+  color: red;
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+  font-family: "Poppins", serif;
 }
 .getInTouch__submit {
   margin-top: 1.875rem;
@@ -549,6 +594,9 @@ img {
   .getInTouch__form {
     width: 80%;
   }
+  .footer {
+    padding-left: 1rem;
+  }
   .footer__flexContent {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -566,5 +614,25 @@ img {
     padding: 0;
     margin: 0 auto;
     max-width: 94%;
+  }
+  .footer {
+    text-align: center;
+  }
+  .footer__iconGroup {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .footer {
+    text-align: center;
+  }
+  .footer__flexContent {
+    gap: 3rem;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, auto);
+  }
+  .footer__section {
+    height: auto;
   }
 }
