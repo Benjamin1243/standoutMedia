@@ -543,6 +543,9 @@ img {
   }
 }
 @media only screen and (max-width: 768px) {
+  .hero {
+    height: 100vh;
+  }
   .hero__contentBox {
     max-width: 92%;
   }
@@ -558,7 +561,7 @@ img {
     text-align: center;
   }
   .hero__img {
-    height: fit-content;
+    height: 100%;
     object-fit: cover;
   }
   .pursuit__heading {
@@ -600,6 +603,7 @@ img {
   .footer__flexContent {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
   }
 }
 @media only screen and (max-width: 550px) {
@@ -616,7 +620,7 @@ img {
     max-width: 94%;
   }
   .footer {
-    text-align: center;
+    padding-left: 1rem;
   }
   .footer__iconGroup {
     display: flex;
@@ -625,6 +629,7 @@ img {
 }
 @media only screen and (max-width: 370px) {
   .footer {
+    text-align: center;
     text-align: center;
   }
   .footer__flexContent {
