@@ -543,6 +543,10 @@ img {
   }
 }
 @media only screen and (max-width: 768px) {
+  .navigation__buttonLink {
+    margin-left: 0;
+    padding-left: 1rem;
+  }
   .hero {
     height: 100vh;
   }
